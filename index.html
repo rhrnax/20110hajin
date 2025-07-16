@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>고등 물리학 I 개념 정리</title>
+  <style>
+    body {
+      font-family: "Helvetica", sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background-color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .formula-box {
+      background-color: #ecf0f1;
+      padding: 1rem;
+      border-left: 5px solid #2980b9;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+    .formula-box h3 {
+      margin-top: 0;
+    }
+    code {
+      font-family: "Courier New", monospace;
+      background-color: #dfe6e9;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>고등학교 물리학 I 개념 정리</h1>
+    <p>쉽고 간단하게 물리 개념을 정리해보자!</p>
+  </header>
+
+  <nav>
+    <a href="#mechanics">역학</a>
+    <a href="#thermo">열역학</a>
+    <a href="#wave">파동</a>
+    <a href="#electro">전자기</a>
+  </nav>
+
+  <main>
+    <section id="mechanics">
+      <h2>🔧 역학</h2>
+      <p><strong>운동의 법칙:</strong> 뉴턴의 제1, 2, 3법칙은 힘과 운동 관계를 설명함. 예: 작용-반작용의 법칙.</p>
+      <p><strong>속도와 가속도:</strong> 속도는 위치의 변화, 가속도는 속도의 변화량을 뜻함.</p>
+      <p><strong>일과 에너지:</strong> 일 = 힘 × 거리, 에너지는 일할 수 있는 능력.</p>
+      <div class="formula-box">
+        <h3>📐 공식 정리</h3>
+        <p><code>속도 v = Δx / Δt</code></p>
+        <p><code>가속도 a = Δv / Δt</code></p>
+        <p><code>F = m × a</code> (뉴턴의 제2법칙)</p>
+        <p><code>일 W = F × d × cosθ</code></p>
+        <p><code>운동에너지 Ek = (1/2)mv²</code></p>
+        <p><code>위치에너지 Ep = mgh</code></p>
+      </div>
+    </section>
+
+    <section id="thermo">
+      <h2>🔥 열역학</h2>
+      <p><strong>온도와 열:</strong> 온도는 분자의 평균 운동에너지, 열은 에너지의 이동.</p>
+      <p><strong>열팽창:</strong> 온도 상승 시 물체가 팽창함. 고체, 액체, 기체 순으로 팽창 크기 증가.</p>
+      <p><strong>열역학 제1법칙:</strong> 에너지 보존 법칙의 열 형태 버전.</p>
+      <div class="formula-box">
+        <h3>📐 공식 정리</h3>
+        <p><code>Q = mcΔT</code> (비열 공식)</p>
+        <p><code>ΔU = Q - W</code> (열역학 제1법칙)</p>
+        <p><code>L = Q / m</code> (잠열 공식)</p>
+      </div>
+    </section>
+
+    <section id="wave">
+      <h2>🌊 파동</h2>
+      <p><strong>진동과 파동:</strong> 진동이 공간을 통해 전달되면 파동이 됨.</p>
+      <p><strong>소리와 빛:</strong> 소리는 종파, 빛은 횡파로 전달됨. 매질의 유무에 따라 전달 방식 다름.</p>
+      <div class="formula-box">
+        <h3>📐 공식 정리</h3>
+        <p><code>v = f × λ</code> (파동속도)</p>
+        <p><code>진폭, 주기, 파장 관계 → T = 1 / f</code></p>
+        <p><code>굴절의 법칙: n₁sinθ₁ = n₂sinθ₂</code></p>
+      </div>
+    </section>
+
+    <section id="electro">
+      <h2>⚡ 전자기</h2>
+      <p><strong>전하와 전류:</strong> 전하는 입자의 전기적 성질, 전류는 전하의 흐름.</p>
+      <p><strong>옴의 법칙:</strong> V = IR (전압 = 전류 × 저항).</p>
+      <p><strong>자기장:</strong> 전류가 흐르면 자기장이 생기며, 전자기 유도 현상 발생.</p>
+      <div class="formula-box">
+        <h3>📐 공식 정리</h3>
+        <p><code>V = I × R</code> (옴의 법칙)</p>
+        <p><code>P = IV</code> (전력 공식)</p>
+        <p><code>F = qvBsinθ</code> (로런츠 힘)</p>
+        <p><code>Φ = B × A × cosθ</code> (자기선속)</p>
+        <p><code>유도기전력 = - N × (ΔΦ / Δt)</code></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
